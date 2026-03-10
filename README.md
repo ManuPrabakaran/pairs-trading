@@ -69,42 +69,6 @@ All results use walk-forward validation: parameters fitted on 2-year training wi
 - Writes `signals_output.json` (current signals) and appends to `signals_history.jsonl` (audit log)
 - Cointegration health checks flagged on every run (`WARN_PVALUE`, `WARN_HEDGE_RATIO`)
 
----
-
-## Repository Structure
-
-```
-data/
-  loader.py           price data fetching and caching via yfinance
-
-pairs/
-  selection.py        cointegration testing, BH correction, spread computation
-  metrics.py          OU process fitting, half-life estimation
-  screening.py        full three-stage expansion funnel
-
-signals/
-  zscore.py           rolling z-score and entry/exit signal generation
-  kalman.py           Kalman filter hedge ratio estimation
-
-strategy/
-  backtest.py         vectorized backtest engine with transaction costs
-  walk_forward.py     rolling train/test validation framework
-  portfolio.py        equal-weight, risk-parity, and quality-weighted portfolio builders
-  live.py             live signal generation and position sizing
-  pairs_config.py     validated pairs and parameters (single source of truth)
-
-analysis/
-  performance.py      Sharpe ratio, drawdown, win rate, trade statistics
-
-notebooks/            19 notebooks covering the full development process
-journal.md            complete research journal with all findings and failures
-
-run_signals.py        standalone script for daily signal generation
-signals_output.json   latest signals (overwritten each run)
-signals_history.jsonl day-by-day signal log (append-only)
-```
-
----
 
 ## Setup
 
