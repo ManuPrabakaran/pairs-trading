@@ -1,7 +1,7 @@
 # Pairs Trading: A Learning Journal
 ### by Manu Prabakaran
 
-This is not a polished research paper. It is a record of how I built a pairs trading strategy from scratch, what I tried, what broke, what I learned from the parts that broke, and what I did next. The notebooks are kept in the order I built them, including the versions that did not work.
+This is a record of how I built a pairs trading strategy from scratch, what I tried, what broke, what I learned from the parts that broke, and what I did next. The notebooks are kept in the order I built them, including the versions that did not work.
 
 ---
 
