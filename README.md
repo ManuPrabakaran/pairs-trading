@@ -6,6 +6,8 @@ Cointegration-based statistical arbitrage across economically linked equity pair
 
 The full research process is documented in [journal.md](journal.md). It covers the complete sequence of experiments, including failed approaches and the reasoning that led to the final strategy.
 
+**Important:** Currently, I am conducting research on training LLM-based agents to review the false positives, and using them in addition to Benjamini-Hotchberg and other tools. This was from the original bottom-up strategy from the first few notebooks. I've managed to reduce the original pre-Benjamini false positive rate by over 75% so far, but I'm still refining the agents. Will update this repo when it's complete.
+
 ---
 
 ## Strategy Overview
